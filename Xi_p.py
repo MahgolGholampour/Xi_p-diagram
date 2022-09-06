@@ -1,3 +1,5 @@
+# Created by Mahgol Gholampour
+
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.ndimage import measurements
@@ -10,7 +12,7 @@ StepL = 50
 Pi_axis = []
 
 
-
+# N should be large but it expands runtime so small N is chosen.
 N = 2
 parts = 50
 P = np.linspace(0.45, 0.72, parts)
@@ -49,6 +51,8 @@ for l in range(Li, Lf, StepL):
 
           S.append(q)
           S2.append(q**2)
+
+
 
         sumS = sum(S)
 
